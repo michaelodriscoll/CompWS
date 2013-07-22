@@ -26,30 +26,32 @@
     }
   }
 
-  .nav {
-    width: 100%;
-    @extend %has-only-margin-bottom;
-  }
+    .banner-detail {
+      color: $mid-grey;
+
+      &:first-child {
+        color: $primary;
+      }
+
+      > b {
+        color: $primary;
+      }
+    }
+
+
+.nav {
+  width: 100%;
+  @extend %has-only-margin-bottom;
+}
   
 
 .splash {
   background: url("../images/bgs/splash_photo.jpg") no-repeat top center;
-  background-size: auto;
+  background-size: cover;
   color: $white;
 }
-
-  .splash-title {
-    @include text(2);
-  }
 
 
 .content {
   background-color: $off-white;
-
-  @include media (480) {
-    margin: 0 columns(4);
-  }
 }
-
-  .content-title {
-  }

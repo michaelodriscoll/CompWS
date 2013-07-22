@@ -8,3 +8,11 @@
     @extend %has-only-margin-bottom;
     @extend %is-inline-block-top;
   }
+
+  .banner-details {
+    @extend %has-only-margin-bottom;
+  }
+
+    .banner-details {
+      @include text(.8);
+    }

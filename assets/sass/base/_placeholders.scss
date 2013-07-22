@@ -1,6 +1,8 @@
 %is-inline-block-top {
   display: inline-block;
   vertical-align: top;
+  *display: inline;
+  *zoom: 1;
 }
 
 
@@ -16,4 +18,9 @@
 
 %has-subtle-border-radius {
   border-radius: 3px;
+}
+
+
+%font-stack-serif {
+  font-family: georgia, times, "times new roman", serif;
 }

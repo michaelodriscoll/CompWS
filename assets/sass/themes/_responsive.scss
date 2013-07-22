@@ -1,0 +1,21 @@
+.content {
+  @include media (1024px) {
+    margin: 0 columns(2);
+  }
+
+  @include media (1280px) {
+    margin: 0 columns(3.5);
+  }
+
+  @include media (1400px) {
+    margin: 0 columns(4);
+  }
+
+  @include media (1920px) {
+    margin: 0 columns(5);
+  }
+
+  @include media (2560px) {
+    margin: 0 columns(6);
+  }
+}

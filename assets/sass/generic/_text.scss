@@ -1,6 +1,6 @@
 p {
   @extend %has-only-margin-bottom;
-  font-family: georgia, times, "times new roman", serif;
+  @extend %font-stack-serif;
 }
 
 p > a {

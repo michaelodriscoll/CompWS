@@ -1,6 +1,6 @@
 .media {
   @extend %has-only-margin-bottom;
-  padding: line();
+  padding: line(.95833);
   background-color: $white;
   border: 1px solid $light-grey;
   @extend %has-subtle-border-radius;
@@ -9,11 +9,17 @@
   .media-img {
     width: 100%;
     height: auto;
-    @extend %has-only-margin-bottom;
     @extend %has-subtle-border-radius;
+    @extend %inline-block-top;
+
+    //  this is used for picturefill
+    > img {
+      width: 100% !important;
+    }
   }
 
   .media-desc {
+    padding-top: line();
     @include text(.8);
     @extend .is-aligned-right;
     color: $mid-grey;

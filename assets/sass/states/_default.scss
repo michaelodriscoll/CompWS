@@ -17,11 +17,13 @@
 
 
 .is-sub-title {
-  @include text();
-  font-weight: bold;
+  @extend %font-stack-serif;
+  color: $primary;
 }
 
 
 .is-minor-title {
-  @include text();
+  @extend %font-stack-serif;
+  font-variant: normal;
+  color: $mid-grey;
 }
