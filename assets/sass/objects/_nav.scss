@@ -22,12 +22,3 @@
     }
   }
 }
-
-  .nav-item {
-    border-bottom: 2px solid currentColor;
-    @include transition(border-bottom-width $fast);
-
-    &:hover {
-      border-bottom-width: line(.25);
-    }
-  }

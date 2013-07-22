@@ -3,14 +3,13 @@
   padding-right: columns();
   background-color: $white;
   border-color: $light-grey;
+  text-align: center;
   position: relative;
 }
 
   .banner-title {
     width: line(4);
     height: line(4);
-    margin-right: line();
-    @extend %has-only-margin-bottom;
     background-color: $primary;
     border-radius: 50%;
     line-height: line(4);
@@ -28,24 +27,29 @@
   }
 
   .nav {
-    padding-top: line(1.75);
-    position: absolute;
-    right: columns();
+    width: 100%;
+    @extend %has-only-margin-bottom;
   }
-
-    .nav-item {
-      @include text(1.25);
-    }
   
 
 .splash {
   background: url("../images/bgs/splash_photo.jpg") no-repeat top center;
-  background-size: 100% auto;
+  background-size: auto;
   color: $white;
 }
 
+  .splash-title {
+    @include text(2);
+  }
+
 
 .content {
-  margin: 0 columns(4);
   background-color: $off-white;
+
+  @include media (480) {
+    margin: 0 columns(4);
+  }
 }
+
+  .content-title {
+  }

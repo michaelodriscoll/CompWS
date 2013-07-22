@@ -17,11 +17,11 @@
 
 
 .is-sub-title {
-  @include text(1.5);
+  @include text();
+  font-weight: bold;
 }
 
 
 .is-minor-title {
-  @include text(1);
-  font-weight: bold;
+  @include text();
 }
