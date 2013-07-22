@@ -1,0 +1,10 @@
+.content {
+  padding: line() line() 0;
+}
+
+  .content-title {
+    @extend %has-only-margin-bottom;
+    @include text(2);
+    font-weight: normal;
+    text-transform: capitalize;
+  }

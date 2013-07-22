@@ -1,0 +1,33 @@
+.nav {
+
+  > ul {
+    padding-left: 0;
+  }
+}
+
+.nav-is-horizontal {
+  font-size: 0;
+  @extend %is-inline-block-top;
+
+  > * {
+    @include text();
+  }
+
+  .nav-item {
+    margin-right: line();
+    @extend %is-inline-block-top;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+  .nav-item {
+    border-bottom: 2px solid currentColor;
+    @include transition(border-bottom-width $fast);
+
+    &:hover {
+      border-bottom-width: line(.25);
+    }
+  }

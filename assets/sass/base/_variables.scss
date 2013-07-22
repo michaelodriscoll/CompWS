@@ -1,0 +1,39 @@
+//  variables  //
+//  ---------  //
+//  variables are safe values to change at any time, they are simple settings such as sizes and colours.
+//  ==================== //
+
+
+//  font-size  //
+//  ==================== //
+
+$font-size: 16px;
+
+//  it's best to chose a value that can be divided 4 times and still be a round number.
+//  line-height in pixel / font-size in pixel = line-height e.g. 24 / 16 = 1.5.
+$line-height: 1.5;
+
+
+//  colours  //
+//  ==================== //
+
+$white:      #fff;
+$off-white:  #fafafa;
+$light-grey: #ddd; 
+$mid-grey:   #999;
+$dark-grey:  #5f5e5d;
+$primary:    #e24a37;
+
+
+//  speeds  //
+//  ==================== //
+
+$fast: .2s;
+
+
+//  vendors  //
+//  -------  //
+//  vendors are the prefixes used for newer css and the browsers that support them and are mostly used in mixins.
+//  ==================== //
+
+$vendors: '-moz-', '-webkit-', '-o-', '-ms-', '';

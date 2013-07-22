@@ -1,0 +1,14 @@
+%is-inline-block-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+%has-only-margin-bottom {
+  margin: 0 0 line();
+}
+
+
+%has-splash-font {
+  font-family: lobster, helvetica, arial, sans-serif;
+}

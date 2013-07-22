@@ -1,0 +1,8 @@
+.site-foot {
+  margin: 0 columns() line();
+  color: $mid-grey;
+}
+
+  .site-foot-copy {
+    @include text();
+  }

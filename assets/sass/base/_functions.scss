@@ -1,0 +1,9 @@
+//  use this to create specific lines to keep the vertical rthymn.
+@function line ($number-of-lines: 1) {
+  @return $line-height * $number-of-lines * $font-size;
+}
+
+
+@function columns ($number-of-lines: 1) {
+  @return 100% / 16 * $number-of-lines;
+}

@@ -1,0 +1,27 @@
+.has-border-bottom { 
+  margin-bottom: line();
+  padding-bottom: line(.9583);
+  border-bottom: 1px solid $light-grey;
+  box-shadow: 0 1px $white;
+}
+
+
+.is-aligned-centre {
+  text-align: center;
+}
+
+
+.is-aligned-right {
+  text-align: right;
+}
+
+
+.is-sub-title {
+  @include text(1.5);
+}
+
+
+.is-minor-title {
+  @include text(1);
+  font-weight: bold;
+}

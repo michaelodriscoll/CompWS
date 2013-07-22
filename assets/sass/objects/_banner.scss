@@ -1,0 +1,10 @@
+.banner {
+  padding-top: line(.9583);
+  border-bottom: 1px solid;
+  box-shadow: 0 1px $white;
+}
+
+  .banner-title {
+    @extend %has-only-margin-bottom;
+    @extend %is-inline-block-top;
+  }

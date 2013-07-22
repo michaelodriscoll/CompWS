@@ -1,0 +1,24 @@
+.splash {
+  margin-bottom: line(-9);
+  padding: line(2) line() line(10);
+  text-align: center;
+
+  > p {
+    @include text(1.5);
+    text-shadow: 0 1px rgba(0, 0, 0, .25);
+  }
+}
+
+  .splash-title {
+    @extend %has-only-margin-bottom;
+    @include text(5);
+    @extend %has-splash-font;
+    font-weight: 300;
+    text-shadow: 0 1px rgba(0, 0, 0, .25), 
+                 0 2px rgba(0, 0, 0, .2),
+                 0 3px rgba(0, 0, 0, .15),
+                 0 4px rgba(0, 0, 0, .1),
+                 0 5px rgba(0, 0, 0, .05);
+    letter-spacing: -2px;
+  }
+

@@ -1,0 +1,31 @@
+@mixin transform ($values) {
+  @each $vendor in $vendors {
+    #{$vendor}transform: #{$values};
+  }
+}
+
+
+@mixin text ($new-size: 1) {
+  @if (not unitless($new-size)) {
+    $new-size: $new-size / $font-size;
+  }
+
+  font-size: $font-size / $font-size * $new-size * $font-size;
+  font-size: $font-size / $font-size * $new-size + rem;
+  line-height: $line-height * round($new-size) * $font-size;
+  line-height: $line-height * round($new-size) + rem;
+}
+
+
+@mixin calc ($values, $property: width) {
+  @each $vendor in $vendors {
+    #{property}: #{$vendor}calc(#{$values});
+  }
+}
+
+
+@mixin transition ($value) {
+  @each $vendor in $vendors {
+    #{$vendor}transition: #{$value};
+  }
+}

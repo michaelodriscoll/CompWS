@@ -1,0 +1,23 @@
+p {
+  @extend %has-only-margin-bottom;
+  font-family: georgia, times, "times new roman", serif;
+}
+
+p > a {
+  border-bottom: 1px solid currentColor;
+  font-weight: bold;
+  color: $primary;
+  opacity: .8;
+  @include transition("border-width #{$fast}, opacity #{$fast}");
+
+  &:hover {
+    border-width: 4px;
+    opacity: 1;
+  } 
+}
+
+a { 
+  text-decoration: none;
+  color: $primary;
+  color: inherit;
+}
