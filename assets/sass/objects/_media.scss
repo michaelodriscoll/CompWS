@@ -1,0 +1,20 @@
+.media {
+  @extend %has-only-margin-bottom;
+  padding: line();
+  background-color: $white;
+  border: 1px solid $light-grey;
+  @extend %has-subtle-border-radius;
+}
+
+  .media-img {
+    width: 100%;
+    height: auto;
+    @extend %has-only-margin-bottom;
+    @extend %has-subtle-border-radius;
+  }
+
+  .media-desc {
+    @include text(.8);
+    @extend .is-aligned-right;
+    color: $mid-grey;
+  }
