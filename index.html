@@ -14,13 +14,13 @@
   <body>
     <header class="banner cf" role="banner">
       <h1 class="banner-title">
-        <a href="/">pblk</a>
+        <a href="/" role="link">pblk</a>
       </h1>
 
       <nav class="nav nav-is-horizontal" role="navigation">
-        <a class="nav-item" href="">Link 1</a>
-        <a class="nav-item" href="">Link 2</a>
-        <a class="nav-item" href="">Link 3</a>
+        <a class="nav-item" href="" role="link">Link 1</a>
+        <a class="nav-item" href="" role="link">Link 2</a>
+        <a class="nav-item" href="" role="link">Link 3</a>
       </nav>
     </header>
 
@@ -49,9 +49,14 @@
 
           <h3 class="content-title is-minor-title">Minor title</h3>
 
+          <div class="media">
+            <img class="media-img" src="assets/images/bgs/splash_photo.jpg" alt="splash photo">
+            <div class="media-desc">The media object</div>
+          </div>
+
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum lorem ut ornare imperdiet. Pellentesque gravida urna in ipsum pretium dapibus. Pellentesque quis mauris gravida, tincidunt lacus nec, tristique sem. Maecenas et est diam. Sed sed massa est. Proin faucibus mollis pulvinar. Praesent pretium dui libero, vitae feugiat velit volutpat non. Aliquam odio libero, hendrerit eu volutpat eu, faucibus in purus. Integer elementum faucibus laoreet.</p>
 
-          <p>Integer nec nibh lorem. <a href="">Vestibulum nisi felis</a>, pharetra nec mauris in, fringilla tristique lacus. Nullam eget scelerisque turpis, quis eleifend metus. Etiam erat nulla, sodales a arcu sed, aliquet consectetur neque. Etiam vitae quam felis. Phasellus fringilla, nisi imperdiet placerat imperdiet, tortor orci rutrum orci, vel porttitor urna diam quis sem. Aenean nec dui vitae neque consequat sodales. Fusce leo est, aliquet in ligula vel, mollis dapibus mi. Fusce vitae massa in leo sodales lobortis.</p>
+          <p>Integer nec nibh lorem. <a href="" role="link">Vestibulum nisi felis</a>, pharetra nec mauris in, fringilla tristique lacus. Nullam eget scelerisque turpis, quis eleifend metus. Etiam erat nulla, sodales a arcu sed, aliquet consectetur neque. Etiam vitae quam felis. Phasellus fringilla, nisi imperdiet placerat imperdiet, tortor orci rutrum orci, vel porttitor urna diam quis sem. Aenean nec dui vitae neque consequat sodales. Fusce leo est, aliquet in ligula vel, mollis dapibus mi. Fusce vitae massa in leo sodales lobortis.</p>
 
           <p>Vestibulum eget orci libero. Sed porta, dui vel feugiat molestie, ante metus iaculis metus, nec sollicitudin turpis mi condimentum risus. Donec commodo libero non porttitor accumsan. In faucibus nisl a imperdiet pulvinar. Duis eu nisl justo. Praesent ipsum ante, ornare id dui quis, malesuada tempus neque. Praesent orci metus, elementum et lacinia ut, faucibus dictum odio. Class aptent <a href="">taciti sociosqu</a> ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sollicitudin massa id mi euismod interdum. Aliquam dictum sem non nibh venenatis aliquet. Curabitur blandit mauris gravida libero hendrerit ullamcorper. Vivamus aliquet lobortis augue, at lobortis ipsum vulputate sit amet. Phasellus porta ligula in vulputate auctor. Integer suscipit lorem rhoncus, euismod urna id, varius sem. Fusce ac nisl interdum odio luctus pellentesque.</p>
         </article>
@@ -81,5 +86,10 @@
         <small>Michael O'Driscoll &copy; 2013</small>
       </div>
     </footer>
+
+    <script src="assets/javascripts/rb.min.js"></script>
+    <script>
+      rubberband.options({mobile: 360})
+    </script>
   </body>
 </html>
