@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" media="screen">
     <link rel="stylesheet" href="assets/stylesheets/application.css" media="all">
+
+    <script src="assets/javascripts/modernizr.min.js"></script>
   </head>
 
   <body>
@@ -16,6 +18,20 @@
       <h1 class="banner-title">
         <a href="/" role="link">pblk</a>
       </h1>
+
+      <div class="banner-details">
+        <div class="banner-detail">
+          <b>Michael O'Driscoll</b>
+        </div>
+
+        <div class="banner-detail">
+          <b>Email:</b> email@example.com
+        </div>
+
+        <div class="banner-detail">
+          <b>Phone:</b> +44 01234 12 34 45
+        </div>
+      </div>
 
       <nav class="nav nav-is-horizontal" role="navigation">
         <a class="nav-item" href="" role="link">Link 1</a>
@@ -35,7 +51,7 @@
 
       <section class="content">
         <header>
-          <h1 class="content-title is-aligned-centre">This is a content header</h1>
+          <h1 class="content-title">This is a content header</h1>
         </header>
 
         <hr>
@@ -50,7 +66,20 @@
           <h3 class="content-title is-minor-title">Minor title</h3>
 
           <div class="media">
-            <img class="media-img" src="assets/images/bgs/splash_photo.jpg" alt="splash photo">
+            <span data-picture data-alt="splash photo">
+              <span class="media-img" data-src="assets/images/sm/splash_photo.jpg"></span>
+              <span class="media-img" data-src="assets/images/med/splash_photo.jpg" data-media="(min-width: 48em)"></span>
+              <span class="media-img" data-src="assets/images/lrg/splash_photo.jpg" data-media="(min-width: 61.25em)"></span>
+
+              <!--[if (lt IE 9) & (!IEMobile)]>
+                  <span class="media-img" data-src="assets/images/lrg/splash_photo.jpg"></span>
+              <![endif]-->
+
+              <noscript>
+                  <img class="media-img" src="assets/images/med/splash_photo.jpg" alt="splash photo">
+              </noscript>
+            </span>
+
             <div class="media-desc">The media object</div>
           </div>
 
@@ -88,8 +117,13 @@
     </footer>
 
     <script src="assets/javascripts/rb.min.js"></script>
+    <script src="assets/javascripts/picturefill.min.js"></script>
+    
     <script>
-      rubberband.options({mobile: 360})
+      rubberband.options({
+        mobile: 360,
+        desktop: 900
+      });
     </script>
   </body>
 </html>
