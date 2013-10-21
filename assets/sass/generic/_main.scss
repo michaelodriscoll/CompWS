@@ -23,12 +23,12 @@ body {
 }
 
 hr {
-  margin: -1px 0 line(.9583);
+  margin: -1px 0 gap(.9583);
   border: 1px solid;
   border-color: $light-grey $white $white $white;
 }
 
 ul, ol { 
   margin: 0; 
-  padding-left: line();
+  padding-left: gap();
 }

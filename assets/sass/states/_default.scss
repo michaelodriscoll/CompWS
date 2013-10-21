@@ -1,6 +1,6 @@
 .has-border-bottom { 
-  margin-bottom: line();
-  padding-bottom: line(.9583);
+  margin-bottom: gap();
+  padding-bottom: gap(.9583);
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 1px $white;
 }

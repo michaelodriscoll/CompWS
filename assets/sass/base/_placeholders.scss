@@ -1,13 +1,13 @@
 %is-inline-block-top {
-  display: inline-block;
-  vertical-align: top;
   *display: inline;
   *zoom: 1;
+  display: inline-block;
+  vertical-align: top;
 }
 
 
 %has-only-margin-bottom {
-  margin: 0 0 line();
+  margin: 0 0 gap();
 }
 
 
@@ -23,4 +23,15 @@
 
 %font-stack-serif {
   font-family: georgia, times, "times new roman", serif;
+}
+
+
+%justify-trick {
+  text-align: justify;
+
+  &:after { 
+    width: 100%;
+    content: "";
+    display: inline-block;
+  }
 }

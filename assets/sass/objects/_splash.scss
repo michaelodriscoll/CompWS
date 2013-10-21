@@ -1,7 +1,10 @@
 .splash {
-  margin-bottom: line(-9);
-  padding: line(2) line() line(10);
+  margin-bottom: gap(-9);
+  padding: gap(2) gap() gap(10);
+  background: transparent url("../images/bgs/splash_photo.jpg") no-repeat top center;
+  background-size: cover;
   text-align: center;
+  color: $white;
 
   > p {
     text-shadow: 0 1px rgba(0, 0, 0, .25);

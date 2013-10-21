@@ -1,6 +1,6 @@
 .media {
   @extend %has-only-margin-bottom;
-  padding: line(.95833);
+  padding: gap(.95833);
   background-color: $white;
   border: 1px solid $light-grey;
   @extend %has-subtle-border-radius;
@@ -19,7 +19,7 @@
   }
 
   .media-desc {
-    padding-top: line();
+    padding-top: gap();
     @include text(.8);
     @extend .is-aligned-right;
     color: $mid-grey;

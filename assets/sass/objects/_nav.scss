@@ -1,4 +1,13 @@
 .nav {
+  width: 100%;
+  @extend %has-only-margin-bottom;
+  @extend %is-inline-block-top;
+
+  @include media (1024px) {
+    border-bottom: 1px solid $dark-grey;
+    text-align: right;
+    position: relative;
+  }
 
   > ul {
     padding-left: 0;
@@ -7,14 +16,13 @@
 
 .nav-is-horizontal {
   font-size: 0;
-  @extend %is-inline-block-top;
 
   > * {
     @include text();
   }
 
   .nav-item {
-    margin-right: line();
+    margin-right: gap();
     @extend %is-inline-block-top;
 
     &:last-child {
@@ -22,3 +30,22 @@
     }
   }
 }
+
+  .nav-item {
+    font-weight: bold;
+
+    @include media (1024px) {
+      margin-bottom: gap(0, -1px);
+      padding-bottom: gap(.5, -1px);
+      border-bottom: 1px solid $dark-grey;
+      @include transition("color .5s");
+    }
+
+    &:hover {
+      @include media (1024px) {
+        padding-bottom: gap(.25);
+        border-bottom: gap(.25) solid currentColor;
+        color: $primary;
+      }
+    }
+  }
