@@ -10,7 +10,7 @@
     width: 100%;
     height: auto;
     @extend %has-subtle-border-radius;
-    @extend %inline-block-top;
+    @extend %display-inline-block;
 
     //  this is used for picturefill
     > img {

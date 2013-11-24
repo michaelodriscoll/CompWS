@@ -6,7 +6,7 @@
   text-align: center;
   position: relative;
 
-  @include media (1024px) {
+  @include media-query (1024px) {
     text-align: justify;
 
     &:after {
@@ -24,29 +24,24 @@
     background-color: $primary;
     border-radius: 50%;
     line-height: gap(4);
-    @extend %is-inline-block-top;
+    @extend %display-inline-block;
 
-    @include media (1024px) {
+    @include media-query (1024px) {
       margin-bottom: 0;
     }
 
     > a {
       @include text(3.25);
       color: $white;
-      @extend %is-inline-block-top;
+      @extend %display-inline-block;
     }
   }
 
   .banner-details {
-    width: 100%;
     @extend %has-only-margin-bottom;
     @include text(.8);
     color: $mid-grey;
-    @extend %is-inline-block-top;
-
-    @include media (1024px) {
-      width: auto;
-    }
+    @extend %display-inline-block;
 
     &:first-child {
       color: $primary;

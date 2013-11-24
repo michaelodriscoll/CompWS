@@ -1,9 +1,0 @@
-//  use this to create specific lines to keep the vertical rthymn.
-@function gap ($number-of-lines: 1, $pixel-offset: 0) {
-  @return round($line-height * $number-of-lines * $font-size) + $pixel-offset;
-}
-
-
-@function columns ($number-of-lines: 1) {
-  @return 100% / 16 * $number-of-lines;
-}

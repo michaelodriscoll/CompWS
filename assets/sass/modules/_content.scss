@@ -2,23 +2,23 @@
   padding: gap() gap() 0;
   background-color: $off-white;
 
-  @include media (1024px) {
+  @include media-query (1024px) {
     margin: 0 columns(2);
   }
 
-  @include media (1280px) {
+  @include media-query (1280px) {
     margin: 0 columns(3.5);
   }
 
-  @include media (1400px) {
+  @include media-query (1400px) {
     margin: 0 columns(5);
   }
 
-  @include media (1920px) {
+  @include media-query (1920px) {
     margin: 0 columns(6);
   }
 
-  @include media (2560px) {
+  @include media-query (2560px) {
     margin: 0 columns(7);
   }
 }
@@ -26,7 +26,6 @@
   .content-title {
     @extend %has-only-margin-bottom;
     @include text();
-    font-variant: small-caps;
     text-transform: capitalize;
     @extend .is-aligned-centre;
   }

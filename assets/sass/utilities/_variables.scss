@@ -37,3 +37,20 @@ $fast: .2s;
 //  ==================== //
 
 $vendors: '-moz-', '-webkit-', '-o-', '-ms-', '';
+
+
+//  devices
+//  =======
+
+    $mob:  0px !default;
+    $phab: 480px !default;
+    $tab:  600px !default;
+    $lap:  992px !default;
+    $desk: 1408px !default;
+    $tv:   1888px !default;
+
+
+//  is responsive?
+//  --------------
+
+$is-responsive: true !default;

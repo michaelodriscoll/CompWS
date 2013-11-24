@@ -1,7 +1,7 @@
-@import 'base/variables';
-@import 'base/functions';
-@import 'base/placeholders';
-@import 'base/mixins';
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/placeholders';
+@import 'utilities/mixins';
 
 
 @import 'generic/normalize';
@@ -9,13 +9,13 @@
 @import 'generic/text';
 
 
-@import 'objects/clearfix';
-@import 'objects/banner';
-@import 'objects/site-foot';
-@import 'objects/nav';
-@import 'objects/content';
-@import 'objects/splash';
-@import 'objects/media';
+@import 'modules/grid';
+@import 'modules/banner';
+@import 'modules/site-foot';
+@import 'modules/nav';
+@import 'modules/content';
+@import 'modules/splash';
+@import 'modules/media';
 
 
 @import 'states/default';

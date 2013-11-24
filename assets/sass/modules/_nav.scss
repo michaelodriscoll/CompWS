@@ -1,10 +1,8 @@
 .nav {
-  width: 100%;
   @extend %has-only-margin-bottom;
-  @extend %is-inline-block-top;
+  @extend %display-inline-block;
 
-  @include media (1024px) {
-    border-bottom: 1px solid $dark-grey;
+  @include media-query (1024px) {
     text-align: right;
     position: relative;
   }
@@ -23,7 +21,7 @@
 
   .nav-item {
     margin-right: gap();
-    @extend %is-inline-block-top;
+    @extend %display-inline-block;
 
     &:last-child {
       margin-right: 0;
@@ -33,16 +31,16 @@
 
   .nav-item {
     font-weight: bold;
+    @include transition("color .5s, border-bottom-width .5s, padding-bottom .5s");
 
-    @include media (1024px) {
+    @include media-query (1024px) {
       margin-bottom: gap(0, -1px);
       padding-bottom: gap(.5, -1px);
       border-bottom: 1px solid $dark-grey;
-      @include transition("color .5s");
     }
 
     &:hover {
-      @include media (1024px) {
+      @include media-query (1024px) {
         padding-bottom: gap(.25);
         border-bottom: gap(.25) solid currentColor;
         color: $primary;

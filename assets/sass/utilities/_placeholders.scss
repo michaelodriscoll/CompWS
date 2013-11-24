@@ -1,7 +1,7 @@
-%is-inline-block-top {
+%display-inline-block {
+  display: inline-block;
   *display: inline;
   *zoom: 1;
-  display: inline-block;
   vertical-align: top;
 }
 
@@ -12,7 +12,7 @@
 
 
 %has-splash-font {
-  font-family: lobster, helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
 }
 
 
@@ -25,13 +25,7 @@
   font-family: georgia, times, "times new roman", serif;
 }
 
-
-%justify-trick {
-  text-align: justify;
-
-  &:after { 
-    width: 100%;
-    content: "";
-    display: inline-block;
-  }
+%gutter {
+  padding-left: gap();
+  padding-right: gap();
 }

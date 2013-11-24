@@ -1,0 +1,104 @@
+//  GRID
+//  ===================================================================
+//  01      fixes the white space issue caused by inline block elements
+//  02      set the child elements back to a normal letter spacing
+//  ===================================================================
+
+    .grid {
+        letter-spacing: -.31em; /* 01 */
+
+        > * {
+            letter-spacing: 0; /* 02 */
+        }
+    }
+
+
+    //  large device spans
+    //  ------------------
+
+        [class*="span"] {
+            @extend %display-inline-block;
+            @extend %gutter;
+        }
+
+        .span1of1 {
+            width: cols(8);
+        }
+
+        @for $i from 1 through 8 {
+            .span#{$i}of8 {
+                width: 100% / 8 * $i;
+            }
+        }
+
+
+    //  small device spans
+    //  ------------------
+
+        @include media-query($mob, $tab) {
+            @for $i from 1 through 3 {
+                .span#{$i}of8 {
+                    width: cols(4);
+                }
+            }
+
+            @for $i from 4 through 8 {
+                .span#{$i}of8 {
+                    width: cols(8);
+                }
+            }
+
+            .span1of2 {
+                width: cols(4);
+            }
+
+            .span2of2 {
+                width: cols(8);
+            }
+        }
+
+
+    //  medium device spans
+    //  -------------------
+
+        @include media-query($tab, $lap) {
+            @each $i in 1, 2 {
+                .span#{$i}of8 {
+                    width: cols(2);
+                }
+            }
+
+            @each $i in 3, 4 {
+                .span#{$i}of8 {
+                    width: cols(4);
+                }
+            }
+
+            @each $i in 5, 6 {
+                .span#{$i}of8 {
+                    width: cols(6);
+                }
+            }
+
+            @each $i in 7, 8 {
+                .span#{$i}of8 {
+                    width: cols(8);
+                }
+            }
+
+            .span1of4 {
+                width: cols(2);
+            }
+
+            .span2of4 {
+                width: cols(4);
+            }
+
+            .span3of4 {
+                width: cols(6);
+            }
+
+            .span4of4 {
+                width: cols(8);
+            }
+        }

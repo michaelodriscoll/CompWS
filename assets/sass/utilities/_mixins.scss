@@ -1,0 +1,63 @@
+@mixin transform ($values) {
+  @each $vendor in $vendors {
+    #{$vendor}transform: #{$values};
+  }
+}
+
+
+//  text
+//  ====
+//  returns formatted font-size and line-height in em and rem
+//  ---------------------------------------------------------
+//  param   $new-size       the size of the font needed as px or relative
+//  param   $parent-size    the size of the parent element, if it is not the same as font-size
+//  param   $unit           unit needed, em or rem
+
+    @mixin text ($new-size: $font-size, $parent-size: $font-size, $unit: rem) {
+        font-size: font-size($new-size, $parent-size, em);
+        font-size: font-size($new-size, $parent-size);
+
+        line-height: line-height($new-size, $parent-size, em);
+        line-height: line-height($new-size, $parent-size);
+    }
+
+
+@mixin calc ($values, $property: width) {
+  @each $vendor in $vendors {
+    #{property}: #{$vendor}calc(#{$values});
+  }
+}
+
+
+@mixin transition ($value) {
+  @each $vendor in $vendors {
+    #{$vendor}transition: #{$value};
+  }
+}
+
+
+//  MEDIA QUERY
+//  ===========
+
+    @mixin media-query ($min: "", $max: "") {
+        @if ($min != "" and $max != "") {
+            $min: $min / 16px + "em";
+            $max: ($max - 1px) / 16px + "em";
+
+            @media screen and (min-width: $min) and (max-width: $max) {
+                @content;
+            }
+        } @else {
+            @if ($min != "") {
+                @media screen and (min-width: $min) {
+                    @content;
+                }
+            }
+
+            @if ($max != "") {
+                @media screen and (max-width: $max) {
+                    @content;
+                }
+            }
+        }
+    }
