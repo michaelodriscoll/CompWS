@@ -1,26 +1,6 @@
 .content {
   padding: gap() gap() 0;
   background-color: $off-white;
-
-  @include media-query (1024px) {
-    margin: 0 columns(2);
-  }
-
-  @include media-query (1280px) {
-    margin: 0 columns(3.5);
-  }
-
-  @include media-query (1400px) {
-    margin: 0 columns(5);
-  }
-
-  @include media-query (1920px) {
-    margin: 0 columns(6);
-  }
-
-  @include media-query (2560px) {
-    margin: 0 columns(7);
-  }
 }
 
   .content-title {

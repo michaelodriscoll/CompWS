@@ -2,9 +2,8 @@
   @extend %has-only-margin-bottom;
   @extend %display-inline-block;
 
-  @include media-query (1024px) {
+  @include media-query($lap) {
     text-align: right;
-    position: relative;
   }
 
   > ul {
@@ -32,18 +31,4 @@
   .nav-item {
     font-weight: bold;
     @include transition("color .5s, border-bottom-width .5s, padding-bottom .5s");
-
-    @include media-query (1024px) {
-      margin-bottom: gap(0, -1px);
-      padding-bottom: gap(.5, -1px);
-      border-bottom: 1px solid $dark-grey;
-    }
-
-    &:hover {
-      @include media-query (1024px) {
-        padding-bottom: gap(.25);
-        border-bottom: gap(.25) solid currentColor;
-        color: $primary;
-      }
-    }
   }

@@ -22,10 +22,17 @@ body {
   color: $dark-grey; 
 }
 
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 hr {
-  margin: -1px 0 gap(.9583);
+  margin-bottom: gap(.9583);
   border: 1px solid;
   border-color: $light-grey $white $white $white;
+  position: relative;
+  top: -1px;
 }
 
 ul, ol { 

@@ -10,6 +10,9 @@
   text-align: center;
 }
 
+.is-aligned-left {
+  text-align: left;
+}
 
 .is-aligned-right {
   text-align: right;
@@ -24,6 +27,9 @@
 
 .is-minor-title {
   @extend %font-stack-serif;
+  @extend .is-aligned-left;
+
+  margin-bottom: gap(.5);
   font-variant: normal;
   color: $mid-grey;
 }

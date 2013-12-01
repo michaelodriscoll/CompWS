@@ -64,5 +64,5 @@
 
 
 @function columns ($number-of-lines: 1) {
-  @return 100% / 16 * $number-of-lines;
+  @return 100% / 8 * $number-of-lines;
 }

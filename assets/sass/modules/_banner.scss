@@ -1,19 +1,17 @@
 .banner {
-  padding: gap(1, -1px) columns() 0;
+  padding: gap(1, -1px) columns(1) 0;
   background-color: $white;
   border-bottom: 1px solid $light-grey;
   box-shadow: 0 1px $white;
-  text-align: center;
   position: relative;
 
-  @include media-query (1024px) {
-    text-align: justify;
+  @include media-query($max: $tab) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    &:after {
-      width: 100%;
-      content: "";
-      display: inline-block;
-    }
+  @include media-query($max: $lap) {
+    text-align: center;
   }
 }
 
@@ -25,10 +23,6 @@
     border-radius: 50%;
     line-height: gap(4);
     @extend %display-inline-block;
-
-    @include media-query (1024px) {
-      margin-bottom: 0;
-    }
 
     > a {
       @include text(3.25);
@@ -42,6 +36,10 @@
     @include text(.8);
     color: $mid-grey;
     @extend %display-inline-block;
+
+    @include media-query($lap) {
+      text-align: right;
+    }
 
     &:first-child {
       color: $primary;

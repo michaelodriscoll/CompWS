@@ -22,7 +22,7 @@
         }
 
         .span1of1 {
-            width: cols(8);
+            width: columns(8);
         }
 
         @for $i from 1 through 8 {
@@ -38,22 +38,22 @@
         @include media-query($mob, $tab) {
             @for $i from 1 through 3 {
                 .span#{$i}of8 {
-                    width: cols(4);
+                    width: columns(4);
                 }
             }
 
             @for $i from 4 through 8 {
                 .span#{$i}of8 {
-                    width: cols(8);
+                    width: columns(8);
                 }
             }
 
             .span1of2 {
-                width: cols(4);
+                width: columns(4);
             }
 
             .span2of2 {
-                width: cols(8);
+                width: columns(8);
             }
         }
 
@@ -64,41 +64,41 @@
         @include media-query($tab, $lap) {
             @each $i in 1, 2 {
                 .span#{$i}of8 {
-                    width: cols(2);
+                    width: columns(2);
                 }
             }
 
             @each $i in 3, 4 {
                 .span#{$i}of8 {
-                    width: cols(4);
+                    width: columns(4);
                 }
             }
 
             @each $i in 5, 6 {
                 .span#{$i}of8 {
-                    width: cols(6);
+                    width: columns(6);
                 }
             }
 
             @each $i in 7, 8 {
                 .span#{$i}of8 {
-                    width: cols(8);
+                    width: columns(8);
                 }
             }
 
             .span1of4 {
-                width: cols(2);
+                width: columns(2);
             }
 
             .span2of4 {
-                width: cols(4);
+                width: columns(4);
             }
 
             .span3of4 {
-                width: cols(6);
+                width: columns(6);
             }
 
             .span4of4 {
-                width: cols(8);
+                width: columns(8);
             }
         }
