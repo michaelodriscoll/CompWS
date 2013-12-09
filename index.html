@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title></title>
+    <title>PBLK</title>
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" media="screen">
     <link rel="stylesheet" href="assets/stylesheets/application.css" media="all">
 
     <script src="assets/javascripts/modernizr.min.js"></script>
   </head>
 
   <body>
-    <header class="banner" role="banner">
-      <h1 class="banner-title">
-        <a href="/" role="link">pblk</a>
-      </h1>
+    <header class="banner grid" role="banner">
+      <div class="span2of2 span4of8">
+        <h1 class="banner-title">
+          <a href="/" role="link">pblk</a>
+        </h1>
+      </div>
 
-      <div class="banner-details">
+      <div class="span2of2 span4of8 banner-details">
         <div class="banner-detail">
           <b>Michael O'Driscoll</b>
         </div>
@@ -33,23 +34,23 @@
         </div>
       </div>
 
-      <nav class="nav nav-is-horizontal" role="navigation">
-        <a class="nav-item" href="" role="link">Link 1</a>
-        <a class="nav-item" href="" role="link">Link 2</a>
-        <a class="nav-item" href="" role="link">Link 3</a>
+      <nav class="span8of8 nav nav--horizontal" role="navigation">
+        <a class="nav-item" href="page/about/" role="link">About</a>
+        <a class="nav-item" href="" role="link">Services</a>
+        <a class="nav-item" href="" role="link">Contact</a>
       </nav>
     </header>
 
-    <main role="main">
-      <section class="splash cf">
-        <header>
-          <h1 class="splash-title">This is a Splash header</h1>
-        </header>
+    <section class="splash">
+      <header>
+        <h1 class="splash-title">This is a Splash header</h1>
+      </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum lorem ut ornare imperdiet.<br>Pellentesque gravida urna in ipsum pretium dapibus.</p>
-      </section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum lorem ut ornare imperdiet.<br>Pellentesque gravida urna in ipsum pretium dapibus.</p>
+    </section>
 
-      <section class="content">
+    <main class="grid content" role="main">
+      <section class="span1of1">
         <header>
           <h1 class="content-title">This is a content header</h1>
         </header>
@@ -61,7 +62,7 @@
             <h1 class="content-title has-border-bottom">Article header</h1>
           </header>
 
-          <div class="media">
+          <figure class="media">
             <span data-picture data-alt="splash photo">
               <span class="media-img" data-src="assets/images/sm/splash_photo.jpg"></span>
               <span class="media-img" data-src="assets/images/med/splash_photo.jpg" data-media="(min-width: 48em)"></span>
@@ -76,8 +77,8 @@
               </noscript>
             </span>
 
-            <div class="media-desc">The media object</div>
-          </div>
+            <figcaption class="media-desc">The media object</figcaption>
+          </figure>
 
           <h2 class="content-title is-sub-title">Sub-title</h2>
 
@@ -109,20 +110,12 @@
     <hr>
 
     <footer class="site-foot" role="contentinfo">
-      <div class="site-foot-copy is-aligned-right">
+      <div class="site-foot-copy tar">
         <small>Michael O'Driscoll &copy; 2013</small>
       </div>
     </footer>
 
-    <script src="assets/javascripts/rb.min.js"></script>
     <script src="assets/javascripts/respond.min.js"></script>
     <script src="assets/javascripts/picturefill.min.js"></script>
-    
-    <script>
-      rubberband.options({
-        mobile: 360,
-        desktop: 1024
-      });
-    </script>
   </body>
 </html>
