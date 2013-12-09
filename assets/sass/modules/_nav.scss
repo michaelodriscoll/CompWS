@@ -11,16 +11,11 @@
   }
 }
 
-.nav-is-horizontal {
-  font-size: 0;
-
-  > * {
-    @include text();
-  }
-
+.nav--horizontal {
   .nav-item {
-    margin-right: gap();
     @extend %display-inline-block;
+    
+    margin-right: gap();
 
     &:last-child {
       margin-right: 0;

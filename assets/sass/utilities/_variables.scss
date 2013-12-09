@@ -1,51 +1,54 @@
-//  variables  //
-//  ---------  //
-//  variables are safe values to change at any time, they are simple settings such as sizes and colours.
-//  ==================== //
+//  VARIABLES
+//  ============================================================
+//  variables are safe values to change at any time, 
+//  they are simple settings such as sizes and colours
+//  ============================================================
 
 
-//  font-size  //
-//  ==================== //
-
-$font-size: 18px;
-
-//  it's best to chose a value that can be divided 4 times and still be a round number.
-//  line-height in pixel / font-size in pixel = line-height e.g. 24 / 16 = 1.5.
-$line-height: 1.77778;
-
-
-//  colours  //
-//  ==================== //
-
-$white:      #fff;
-$off-white:  #fafafa;
-$light-grey: #ddd; 
-$mid-grey:   #999;
-$dark-grey:  #5f5e5d;
-$primary:    #e24a37;
+//  font-size
+//  ============================================================
+//  it's best to chose a value that can be divided 4 times 
+//  and still be a round number line-height in pixel / font-size 
+//  in pixel = line-height e.g. 24 / 16 = 1.5
+//  ============================================================
+    
+    $font-size:   18px;
+    $line-height: 1.77778;
 
 
-//  speeds  //
-//  ==================== //
+//  colours
+//  ============================================================
 
-$fast: .2s;
+    $white:      #fff;
+    $off-white:  #fafafa;
+    $light-grey: #ddd; 
+    $mid-grey:   #999;
+    $dark-grey:  #5f5e5d;
+    $primary:    #e24a37;
 
 
-//  vendors  //
-//  -------  //
-//  vendors are the prefixes used for newer css and the browsers that support them and are mostly used in mixins.
-//  ==================== //
+//  speeds
+//  ============================================================
 
-$vendors: '-moz-', '-webkit-', '-o-', '-ms-', '';
+    $fast: .2s;
+
+
+//  vendors
+//  ============================================================
+//  vendors are the prefixes used for newer css and the browsers 
+//  that support them and are mostly used in mixins.
+//  ============================================================
+
+    $vendors: '-moz-', '-webkit-', '-o-', '-ms-', '';
 
 
 //  devices
-//  =======
+//  ============================================================
 
     $mob:  0px !default;
-    $phab: 480px !default;
-    $tab:  600px !default;
-    $lap:  992px !default;
+    $phab: 480px  !default;
+    $tab:  600px  !default;
+    $lap:  992px  !default;
     $desk: 1408px !default;
     $tv:   1888px !default;
 
@@ -53,4 +56,4 @@ $vendors: '-moz-', '-webkit-', '-o-', '-ms-', '';
 //  is responsive?
 //  --------------
 
-$is-responsive: true !default;
+    $is-responsive: true !default;

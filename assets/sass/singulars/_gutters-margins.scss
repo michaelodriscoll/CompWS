@@ -1,0 +1,35 @@
+//  GUTTERS & MARGINS
+//  =================
+
+//  gutters
+//  =======
+
+    .gttr {
+        padding-left:  gap(.5);
+        padding-right: gap(.5);
+    }
+
+    .gttr-left {
+        padding-left: gap(.5);
+    }
+
+    .gttr-right {
+        padding-right: gap(.5);
+    }
+
+    .gttr-none {
+        padding-left:  0;
+        padding-right: 0;
+    }
+
+
+//  margins
+//  =======
+
+    .mrgn-bot {
+        margin-bottom: gap();
+    }
+
+    .mrgn-none {
+        margin-bottom: 0;
+    }

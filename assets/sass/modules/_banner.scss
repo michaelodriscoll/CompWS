@@ -6,36 +6,45 @@
   position: relative;
 
   @include media-query($max: $tab) {
-    padding-left: 0;
-    padding-right: 0;
+    text-align: center;
   }
 
   @include media-query($max: $lap) {
-    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
   .banner-title {
+    @extend %has-only-margin-bottom;
+    @extend %display-inline-block;
+
     width: gap(4);
     height: gap(4);
-    @extend %has-only-margin-bottom;
     background-color: $primary;
     border-radius: 50%;
     line-height: gap(4);
-    @extend %display-inline-block;
+
+    @include media-query($lap) {
+      margin-bottom: 0;
+    }
 
     > a {
-      @include text(3.25);
-      color: $white;
       @extend %display-inline-block;
+
+      @include text(3.25);
+
+      color: $white;
     }
   }
 
   .banner-details {
     @extend %has-only-margin-bottom;
-    @include text(.8);
-    color: $mid-grey;
     @extend %display-inline-block;
+
+    @include text(.8);
+
+    color: $mid-grey;
 
     @include media-query($lap) {
       text-align: right;

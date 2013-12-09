@@ -21,6 +21,6 @@
   .media-desc {
     padding-top: gap();
     @include text(.8);
-    @extend .is-aligned-right;
+    @extend .tar;
     color: $mid-grey;
   }

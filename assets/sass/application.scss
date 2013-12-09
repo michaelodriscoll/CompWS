@@ -1,21 +1,24 @@
-@import 'utilities/variables';
-@import 'utilities/functions';
-@import 'utilities/placeholders';
-@import 'utilities/mixins';
+@import
+
+"utilities/variables",
+"utilities/functions",
+"utilities/patterns",
+"utilities/mixins",
 
 
-@import 'generic/normalize';
-@import 'generic/main';
-@import 'generic/text';
+"generic/normalize",
+"generic/main",
+"generic/text",
 
 
-@import 'modules/grid';
-@import 'modules/banner';
-@import 'modules/site-foot';
-@import 'modules/nav';
-@import 'modules/content';
-@import 'modules/splash';
-@import 'modules/media';
+"modules/grid",
+"modules/banner",
+"modules/site-foot",
+"modules/nav",
+"modules/content",
+"modules/splash",
+"modules/media",
 
 
-@import 'states/default';
+"singulars/default",
+"singulars/gutters-margins";

@@ -1,7 +1,7 @@
 p {
   @extend %has-only-margin-bottom;
   @extend %font-stack-serif;
-  @extend .is-aligned-left;
+  @extend .tal;
 }
 
 p > a {

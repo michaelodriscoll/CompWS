@@ -6,15 +6,15 @@
 }
 
 
-.is-aligned-centre {
+.tac {
   text-align: center;
 }
 
-.is-aligned-left {
+.tal {
   text-align: left;
 }
 
-.is-aligned-right {
+.tar {
   text-align: right;
 }
 
@@ -27,7 +27,7 @@
 
 .is-minor-title {
   @extend %font-stack-serif;
-  @extend .is-aligned-left;
+  @extend .tal;
 
   margin-bottom: gap(.5);
   font-variant: normal;

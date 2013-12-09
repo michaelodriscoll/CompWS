@@ -1,11 +1,20 @@
 .content {
-  padding: gap() gap() 0;
+  padding-top:   gap();
+  padding-left:  columns(1);
+  padding-right: columns(1);
   background-color: $off-white;
+
+  @include media-query($max: $lap) {
+    padding-left:  0;
+    padding-right: 0;
+  }
 }
 
   .content-title {
     @extend %has-only-margin-bottom;
-    @include text();
+    @extend .tac;
+
+    @include text(1.33333);
+
     text-transform: capitalize;
-    @extend .is-aligned-centre;
   }
