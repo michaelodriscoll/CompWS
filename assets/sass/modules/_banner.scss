@@ -21,7 +21,7 @@
 
     width: gap(4);
     height: gap(4);
-    background-color: $primary;
+    background-color: $white;
     border-radius: 50%;
     line-height: gap(4);
 
@@ -35,6 +35,10 @@
       @include text(3.25);
 
       color: $white;
+    }
+
+    img[src*=".png"] {
+      background-color: $primary;
     }
   }
 
